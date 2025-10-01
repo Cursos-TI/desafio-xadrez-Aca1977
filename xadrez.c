@@ -5,28 +5,40 @@
 // O objetivo é utilizar estruturas de repetição e funções para determinar os limites de movimentação dentro do jogo.
 
 int main() {
-    // Nível Novato - Movimentação das Peças
-    // Sugestão: Declare variáveis constantes para representar o número de casas que cada peça pode se mover.
+    // Movimentação da Torre (usndo FOR)
+    int i; //variável de controle do loop
+    int casasTorre = 5; //número de casas para mover a torre
+    
+    printf("Movimento da Torre:\n");
+    for (i = 1; i <= casasTorre; i++) {
+        printf("Direita\n"); //torre vai sempre em linha reta para a direita
+    }
 
-    // Implementação de Movimentação do Bispo
-    // Sugestão: Utilize uma estrutura de repetição para simular a movimentação do Bispo em diagonal.
+    printf("\n");
 
-    // Implementação de Movimentação da Torre
-    // Sugestão: Utilize uma estrutura de repetição para simular a movimentação da Torre para a direita.
+    // Movimento do Bispo (usando while)
+    int j = 1; //variável de controle do loop
+    int casasBispo = 5; //número de casas para mover o bispo
 
-    // Implementação de Movimentação da Rainha
-    // Sugestão: Utilize uma estrutura de repetição para simular a movimentação da Rainha para a esquerda.
+    printf("Movimento do Bispo:\n");
+    while (j <= casasBispo)
+    {
+        printf("Cima Direita\n");//bispo vai sempre na diagonal (cima + direita)
+        j++;
+    }
 
-    // Nível Aventureiro - Movimentação do Cavalo
-    // Sugestão: Utilize loops aninhados para simular a movimentação do Cavalo em L.
-    // Um loop pode representar a movimentação horizontal e outro vertical.
+    printf("\n");
 
-    // Nível Mestre - Funções Recursivas e Loops Aninhados
-    // Sugestão: Substitua as movimentações das peças por funções recursivas.
-    // Exemplo: Crie uma função recursiva para o movimento do Bispo.
-
-    // Sugestão: Implemente a movimentação do Cavalo utilizando loops com variáveis múltiplas e condições avançadas.
-    // Inclua o uso de continue e break dentro dos loops.
+    // Movimento da Rainha (usando DO-WHILE)
+    int k = 1; //variável de controle do loop
+    int casasRainha = 8; //rainha vai sempre em linha reta para a esquerda
+    printf("Movimento da Rainha:\n");
+    do{
+        printf("Esquerd\n"); //rainha vai sempre em linha reta para a esquerda
+        k++;
+    } while (k <= casasRainha);
+  
+    
 
     return 0;
 }
